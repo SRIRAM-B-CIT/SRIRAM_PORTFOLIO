@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+
+.about__container,
+.education__container,
+.experience__container,
+.projects__container,
+.skills_container,
+.contact__container {
+  background: linear-gradient(145deg, #1e293b 0%, #334155 100%);
+  border: 2px solid rgba(0, 229, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 229, 255, 0.2);
+}
+
+.education__card,
+.experience__card,
+.projects__card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(0, 229, 255, 0.1) 100%);
+  border: 1px solid rgba(0, 229, 255, 0.4);
+  box-shadow: 0 5px 20px rgba(0, 229, 255, 0.3);
+}
+
+.skills_box {
+  background: linear-gradient(145deg, rgba(255, 64, 129, 0.1) 0%, rgba(0, 229, 255, 0.1) 100%);
+  border: 2px solid rgba(255, 64, 129, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 64, 129, 0.2);
+}
+.projects__links,
+.projects__link {
+  position: relative;
+  z-index: 10; 
+}
+
+    </style>
+    <title>Personal Portfolio |Sriram B</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <a href="#"><span class="logo nav__logo">S</span>riram</a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn__large">Contact</a>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/header.jpg" alt="header" />
+      </div>
+      <div class="header__content">
+        <div>
+          <h1>Hi,<br />I'm Sriram B<br/>Developer</h1>
+        </div>
+        <p class="section__description">
+          Hello! I'm Sriram B, a passionate software developer skilled in both web and mobile application development. I specialize in crafting responsive, user-friendly interfaces and building robust back-end systems using Java, Python, and SQL. With hands-on experience in full-stack development, I enjoy turning ideas into seamless digital solutions. Explore my projects and feel free to connect!
+        </p>
+        <div class="header__btn">
+          <button onclick="window.location.href='mailto:srirambalaji770@gmail.com'" class="btn">Hire Me Now</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/bg.png" alt="bg" class="about__bg-1" />
+        <img src="assets/bg.png" alt="bg" class="about__bg-2" />
+        <img src="assets/about.jpg" alt="about" class="about__img" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">Bit About Me</h2>
+        <p class="section__description">
+         <big>I am B. Sriram, a Second year student pursuing Computer Science Engineering at Chennai Institute Of Technology with a strong aspiration to build a career in the IT industry, specifically in a software development role.
+<br>
+<br>
+With a strong academic background, a passion for technology, and a commitment to continuous learning, I have developed a solid understanding of programming fundamentals and problem-solving skills. 
+<br>
+<br>
+I possess excellent communication skills, having hosted various events and actively participated in orientation and inter-college competitions. These experiences have strengthened my confidence, leadership, and collaborative abilities, helping me connect effectively with diverse audiences. I am fluent in English and  Tamil ,both in reading and writing, which enables me to work efficiently in multilingual environments.
+<br>
+<br>
+I believe in maintaining a balanced approach between technical expertise and interpersonal skills, which I consider vital for success in today’s dynamic IT world. 
+<br>
+<br>
+Let's connect and grow together!</big> 
+        </p>
+        <div class="about__btn">
+          <button onclick="window.open('assets/cv.pdf')"  class="btn">Download CV</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section_container education_container" id="education">
+      <h2 class="section__header">Education</h2>
+      <div class="education__grid">
+        <div class="education__card">
+          <div class="education__header">
+            <h4>Bachelor of Engineering (B.E)</h4>
+            <p><strong>Chennai Institute Of Technology</strong> | 2024 - 2028</p>
+          </div>
+          <div class="education__content">
+            <p>Computer Science Engineering</p>
+            <p>CGPA: 9.62</p>
+            <ul>
+              <li>Relevant coursework: Cloud Computing ,Networking ,Web Development, DBMS , Data Structures and Algorithms,Operating Systems,Internet of Things,Object Oriented Programming</li>
+              <li>Member of Computer Science Society</li>
+            </ul>
+          </div>
+        </div>
+        <div class="education__card">
+          <div class="education__header">
+            <h4>Certifications</h4>
+          </div>
+          <div class="education__content">
+            <ul>
+              <li>AWS Cloud Practitioner Essentials</li>
+              <li>Cloud Computing and Foundation</li>
+              <li>Data Structures and Algorithms in Java</li>
+              <li>Unlocking Power Of JavaScript</li>
+              <li> Introduction to Data Science</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Work Experience / Internship -->
+    <section class="section_container experience_container" id="experience">
+      <h2 class="section__header">Work Experience</h2>
+      <div class="experience__grid">
+        <div class="experience__card">
+          <div class="experience__header">
+            <h4>GOOGLE CLOUD-GENERATIVE AI VIRTUAL INTENSHIP</h4>
+            <p><strong>Eduskills</strong> | Apr'25 - Jun'25</p>
+          </div>
+          <div class="experience__content">
+            <ul>
+              <li>Developed production-ready AI models including: </li>
+          <li>Image captioning system (Transformer) achieving 92% accuracy .Fine-tuned BART 
+model with 15% improved coherence </li>
+          <li> Optimized vector search performance by 25% using cosine similarity .Reduced 
+model training time 30% via Vertex AI prompt engineering </li>
+          <li>Participated in daily standups and code reviews</li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience__card">
+          <div class="experience__header">
+            <h4>CODING INSTRUCTOR</h4>
+            <p><strong>CIT<strong> May'25 - Jun'25</p>
+          </div>
+          <div class="experience__content">
+            <ul>
+              <li>Taught web development basics to juniors during semester breaks. </li>
+          <li>Covered HTML/CSS layouts, JS interactivity, and API integration (e.g., fetching data). </li>
+          <li> Guided peers in deploying projects via GitHub Pages and Supabase.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section_container projects_container" id="projects">
+      <h2 class="section__header">My Projects</h2>
+      <p class="section__description">
+        Here are some of my key projects showcasing my technical skills and creativity.
+      </p>
+      <div class="projects__grid">
+        <div class="projects__card">
+          <img src="assets/project-1.jpg" alt="E-Commerce Platform for Cloathing" />
+          <div class="projects__content">
+            <h2>Kenpachi.in – E-Commerce Website</h2>
+  <br>
+  <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Bootstrap, Flexbox/Grid, Razorpay Integration, Responsive Design, jQuery</p>
+  <br>
+  <p><strong>About:</strong> Developed a responsive e-commerce front-end for Kenpachi Apparel, a brand focused on oversized anime-themed clothing.</p>
+  <br>
+  <p><strong>Approach:</strong> Designed a dynamic, mobile-friendly UI highlighting products, brand identity, and customer ease-of-use.</p>
+  <br>
+  <p><strong>Method:</strong> Utilized Bootstrap for layout consistency, integrated Razorpay for secure payments, implemented product categorization, animated elements, and contact features to boost customer interaction and brand presence.</p>
+
+            <div class="projects__tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>BootStrap</span>
+              <span>Razorpay</span>
+            </div>
+            <a href="https://kenpachi.in/" class="projects__link">View Project →</a>
+            <br>
+            <a href="https://github.com/anushabalaji5/Kenpachi-E-Commerce-website-.git" class="projects__link">Source Code →</a>
+            <br>
+            <a href="https://youtu.be/D7RQmkPAEb8?si=9ppu62AUdp7g1A2z" class="projects__link">View Project Video→</a>
+          </div>
+        </div>
+        <div class="projects__card">
+          <img src="assets/project-2.png" alt="Guide web app" />
+          <div class="projects__content">
+            <br>
+            <h2>LOCO TALES - City Guide Application </h2>
+  <br>
+  <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Bootstrap, Web Speech API, OpenStreetMap, Google Places API, Wikipedia API</p>
+  <br>
+  <p><strong>About:</strong> Built an interactive tour guide platform for Indian cities using OpenStreetMap APIs, Google Places API, and Wikipedia API for real-time place discovery. Implemented dynamic filtering of nearby attractions, hotels, restaurants, shopping areas, and museums within a 10km radius</p>
+  <br>
+  <p><strong>Approach:</strong> Integrated Web Speech API to provide audio descriptions for each place with play/pause/stop controls. Designed a fully responsive UI with interactive features like “Locate” (opens Google Maps) and “Listen” (text-to-speech).</p>
+  <br>
+  <p><strong>Method:</strong> Built an interactive web interface with API integeration which would benefit the tourists</p>
+
+            <div class="projects__tech">
+              <span>JavaScript</span>
+              <span>Google Places API</span>
+              <span>HTML/CSS</span>
+              <span>Web Speech API</span>
+            </div>
+            <a href="https://youtu.be/cyCqkXZLdco?si=FZpSwgaumXy91zNR" class="projects__link">View Project Video→</a>
+            <br>
+            <a href="https://github.com/SRIRAM-B-CIT/LOCO-TALES.git" class="projects__link">Source Code →</a>
+            <br>
+            <a href="https://sriram-b-cit.github.io/LOCO-TALES/" class="projects__link">View Live Website →</a>
+          </div>
+           </div>
+        <div class="projects__card">
+  <img src="assets/project-3.png" alt="Bus Reservation System" />
+  <div class="projects__content">
+    <br>
+    <h2>BusGo - BUS RESERVATION SYSTEM</h2>
+    <br>
+    <p><strong>Tech Stack:</strong> Java, HTML, CSS, JavaScript, JDBC, MySQL</p>
+    <br>
+    <p><strong>About:</strong> Developed a complete web-based bus reservation system using Java and JDBC for backend operations, with a user-friendly interface created using HTML, CSS, and JavaScript. The system allows users to search buses, view schedules, book/cancel tickets, and receive booking confirmations.</p>
+    <br>
+    <p><strong>Approach:</strong> Implemented a modular architecture with separate admin and user dashboards. Admins can add/update bus details, manage bookings, and generate reports. Users can register, log in, and view ticket history.</p>
+    <br>
+    <p><strong>Method:</strong> Connected the application to a MySQL database using JDBC for data persistence. Ensured data integrity and real-time updates across all operations.</p>
+    <div class="projects__tech">
+      <span>Java</span>
+      <span>JDBC</span>
+      <span>MySQL/MongoDB</span>
+      <span>HTML/CSS</span>
+      <span>JavaScript</span>
+      <span>Node JS / ExpressJS</span>
+    </div>
+    <a href="https://youtu.be/qin89BNUyB8?si=8UjG0uxbtJbQLXc4" class="projects__link">View Project Video →</a>
+    <br>
+    <a href="https://github.com/SRIRAM-B-CIT/BUSGO---BUS-RESERVATION-SYSTEM.git" class="projects__link">Source Code →</a>
+  </div>
+</div>
+    </section>
+
+    <section class="section_container skills_container" id="skills">
+      <br>
+      <div class="skills_box">
+  <h2 class="section__header">Skills</h2>
+
+  <div class="skills__category">
+    <h3>Technical Skills</h3>
+    <div class="skill">
+      <i class="fab fa-python"></i> Java
+      <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+    </div>
+    <div class="skill">
+      <i class="fab fa-html5"></i> HTML
+      <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+    </div>
+    <div class="skill">
+      <i class="fab fa-css3-alt"></i> CSS
+      <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
+    </div>
+    <div class="skill">
+      <i class="fab fa-js"></i> JavaScript
+      <div class="progress"><div class="progress-bar" style="width: 60%;"></div></div>
+    </div>
+    <div class="skill">
+      <i class="fas fa-database"></i> MySQL
+      <div class="progress"><div class="progress-bar" style="width: 75%;"></div></div>
+    </div>
+    <div class="skill">
+      <i class="fas fa-server"></i> SpringBoot & Hibernate
+      <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div>
+    </div>
+  </div>
+
+  <div class="skills__category">
+    <h3>Soft Skills</h3>
+    <ul class="soft__skills">
+      <li>Team Collaboration</li>
+      <li>Problem Solving</li>
+      <li>Content Writing</li>
+      <li>Event Management</li>
+      <li>Public Speaking</li>
+    </ul>
+  </div>
+  </div>
+</section>
+    <center><section class="section__container contact__container" id="contact">
+      <div class="logo">S</div>
+      <h2 class="section__header">Let's Talk With Me!</h2>
+      <p class="section__description">
+        An open invitation to connect, and exploring collaborative opportunities
+        on my personal portfolio website.
+      </p>
+      <div class="contact__socials">
+        <a href="mailto:srirambalaji770@gmail.com"><i class="ri-mail-fill"></i></a>
+        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i class="ri-linkedin-fill"></i></a>
+        <a href="https://github.com/SRIRAM-B-CIT"><i class="ri-github-fill"></i></a>
+      </div>
+    </section></center>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
